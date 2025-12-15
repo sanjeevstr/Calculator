@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Calculator</title>
+
+
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="calc-wrap" role="application" aria-label="Animated calculator">
+        <div class="header">
+            <div class="brand">
+                <div class="logo">C</div>
+                <div>
+                    <h1>CALCULATOR</h1>
+                    <p> • sanjeevstr • </p>
+                </div>
+            </div>
+            <div class="power" id="clearAll" title="Clear all (Esc)">AC</div>
+        </div>
+
+        <div class="display" aria-live="polite">
+            <div class="prev" id="previous">0</div>
+            <div class="curr" id="current"><span class="value" id="currentValue">0</span></div>
+        </div>
+
+        <div class="keys" role="grid">
+            <button class="key small" data-action="toggle-sign" title="Toggle sign (±)">±</button>
+            <button class="key small" data-action="percent" title="Percent (%)">%</button>
+            <button class="key small" data-action="back" title="Backspace (Del)">⌫</button>
+            <button class="key op" data-op="/" title="Divide">÷</button>
+
+            <button class="key" data-num="7">7</button>
+            <button class="key" data-num="8">8</button>
+            <button class="key" data-num="9">9</button>
+            <button class="key op" data-op="*" title="Multiply">×</button>
+
+            <button class="key" data-num="4">4</button>
+            <button class="key" data-num="5">5</button>
+            <button class="key" data-num="6">6</button>
+            <button class="key op" data-op="-" title="Subtract">−</button>
+
+            <button class="key" data-num="1">1</button>
+            <button class="key" data-num="2">2</button>
+            <button class="key" data-num="3">3</button>
+            <button class="key op" data-op="+" title="Add">+</button>
+
+            <button class="key" data-num="0" style="grid-column:span 2">0</button>
+            <button class="key" data-num=".">.</button>
+            <button class="key eq" data-action="equals">=</button>
+        </div>
+
+        <div class="footer-note">Keyboard: numbers, + - * /, Enter =, Backspace, Esc</div>
+
+        <div class="glow" aria-hidden="true"></div>
+    </div>
+
+<script src="./script.js"></script>
+
+</script>
+</body>
+</html>
